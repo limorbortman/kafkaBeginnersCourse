@@ -1,0 +1,24 @@
+# Package Files
+*.jar
+*.war
+*.ear
+
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+/.idea
+/.idea_modules
+workspace/
+build/
+out/
+target/
+
+tmp
+dist
+/RUNNING_PID
+.settings/
+.classpath
+.project
+project/project
+project/target
