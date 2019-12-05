@@ -1,4 +1,4 @@
-package com.github.lilmors.kafka.tutorial1;
+package com.github.lilmors.kafka.tutorial1.producers;
 
 import org.apache.kafka.clients.producer.*;
 import org.apache.kafka.common.serialization.StringSerializer;
