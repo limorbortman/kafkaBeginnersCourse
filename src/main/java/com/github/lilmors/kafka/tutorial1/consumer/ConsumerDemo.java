@@ -3,7 +3,6 @@ package com.github.lilmors.kafka.tutorial1.consumer;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
-import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,13 +25,13 @@ import java.util.Properties;
  */
 public class ConsumerDemo {
 
+    private static final Logger logger = LoggerFactory.getLogger(ConsumerDemo.class);
+
     private static final String BOOTSTRAP_SERVER = "localhost:9092";
     private static final String TOPIC_NAME = "topic1";
     private static final String GROUP_ID = "my-group-id_1";
 
     public static void main(String[] args) {
-
-        Logger logger = LoggerFactory.getLogger(ConsumerDemo.class);
 
         //Creating consumer properties
         Properties properties = new Properties();
@@ -43,7 +42,7 @@ public class ConsumerDemo {
         properties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
 
         //Creating the consumer
-        KafkaConsumer<String, String> consumer = new KafkaConsumer<String, String>(properties);
+        KafkaConsumer<String, String> consumer = new KafkaConsumer<>(properties);
 
         //Subscribe the consumer to a topic
         consumer.subscribe(Collections.singleton(TOPIC_NAME));
