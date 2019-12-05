@@ -18,6 +18,11 @@ import java.util.Properties;
  * 2. Creating the consumer
  * 3. Subscribe the consumer to a topic(s)
  * 4. poll for new data
+ *
+ * ConsumerDemoGroups
+ * When adding consumers to a group (By starting a new consumer with the same group id)
+ * the ConsumerCoordinator will reassign new partition to every consumer and will log it
+ * The same thing happened when a consumer gos down
  */
 public class ConsumerDemo {
 
