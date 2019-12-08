@@ -8,6 +8,19 @@
     <artifactId>kafka-beginners-course</artifactId>
     <version>1.0</version>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>9</source>
+                    <target>9</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.kafka</groupId>
@@ -20,7 +33,12 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.25</version>
         </dependency>
-    </dependencies>
 
+        <dependency>
+            <groupId>com.twitter</groupId>
+            <artifactId>hbc-core</artifactId> <!-- or hbc-twitter4j -->
+            <version>2.2.0</version> <!-- or whatever the latest version is -->
+        </dependency>
+    </dependencies>
 
 </project>
