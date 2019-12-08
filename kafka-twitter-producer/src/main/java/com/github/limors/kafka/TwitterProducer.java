@@ -1,4 +1,4 @@
-package com.github.lilmors.kafka.ex;
+package com.github.limors.kafka;
 
 import com.google.common.collect.Lists;
 import com.twitter.hbc.ClientBuilder;
@@ -27,10 +27,10 @@ public class TwitterProducer {
 
     private final Logger logger = LoggerFactory.getLogger(TwitterProducer.class);
 
-    private static final String CONSUMER_KEY = "*****";
-    private static final String CONSUMER_SECRET = "*****";
-    private static final String TOKEN = "*******";
-    private static final String SECRET = "******";
+    private static final String CONSUMER_KEY = "***";
+    private static final String CONSUMER_SECRET = "***";
+    private static final String TOKEN = "****";
+    private static final String SECRET = "****";
     private static final String BOOTSTRAP_SERVER = "localhost:9092";
     private static final String TOPIC_NAME = "Twitter_ex";
     private static final ArrayList<String> TERMS = Lists.newArrayList("kafka");

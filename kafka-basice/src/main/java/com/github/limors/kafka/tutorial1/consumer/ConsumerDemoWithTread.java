@@ -1,4 +1,4 @@
-package com.github.lilmors.kafka.tutorial1.consumer;
+package com.github.limors.kafka.tutorial1.consumer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

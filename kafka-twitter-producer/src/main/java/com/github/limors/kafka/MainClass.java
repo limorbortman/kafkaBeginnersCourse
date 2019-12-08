@@ -1,4 +1,4 @@
-package com.github.lilmors.kafka.ex;
+package com.github.limors.kafka;
 
 public class MainClass {
 
