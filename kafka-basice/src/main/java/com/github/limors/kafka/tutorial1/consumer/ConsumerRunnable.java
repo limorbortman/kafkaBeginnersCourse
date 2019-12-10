@@ -18,7 +18,7 @@ public class ConsumerRunnable implements Runnable {
     private Logger logger = LoggerFactory.getLogger(ConsumerRunnable.class);
 
     private CountDownLatch latch;
-    KafkaConsumer<String, String> consumer;
+    private KafkaConsumer<String, String> consumer;
 
     public ConsumerRunnable(CountDownLatch countDownLatch,
                             String bootstrapServer,
