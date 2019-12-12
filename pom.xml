@@ -25,6 +25,7 @@
         <module>kafka-basice</module>
         <module>kafka-twitter-producer</module>
         <module>kafka-elasticsearch-Consumer</module>
+        <module>kafkastreams</module>
     </modules>
 
 </project>
